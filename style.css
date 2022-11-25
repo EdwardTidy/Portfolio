@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: clamp(16px, 2.0833333333vw, 16px);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.head {
+  text-align: center;
+  background-color: #fdf3f8;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 10vh;
+  background-color: #f3f8fd;
+  font-size: 1.25rem;
+}
+
+.nav_and_end {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+.navbar-end {
+  content: "";
+  width: 100%;
+  background-color: #d0e7e3;
+  text-align: center;
+}
+
+.logo_left {
+  flex-grow: 1;
+  display: flex;
+}
+
+.logo_right {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  list-style: none;
+}
+
+.navbar.sticky {
+  position: fixed;
+}
+
+/* Landing banner */
+
+.banner-top {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  height: 40rem;
+}
+
+.banner_text {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fdf3f8;
+}
+
+.banner_text p {
+  padding: 3%;
+}
+
+.banner_text button {
+  padding: 5%;
+  background-color: #e679a5;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.banner_text button:hover {
+  background-color: #d3276c;
+}
+
+/* Best-selling cake photos */
+
+#best_sellers {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.best_sellers_container {
+  text-align: center;
+}
+
+#best_sellers h3 {
+  margin: 3%;
+}
+
+.best_sellers_container {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  margin-left: 10%;
+  gap: 100px;
+}
+
+.best_sellers_img {
+  flex: 1 1 auto;
+}
+
+.best_sellers_img img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Multi-tab-container */
+
+#how_to {
+  max-width: 80%;
+  margin: 0 auto 0 auto;
+  background-color: #fdf3f8;
+}
+
+.how_to__header {
+  text-align: center;
+  padding: 5%;
+  background-color: white;
+}
+
+.how_to_tab-container {
+  display: flex;
+  justify-content: center;
+}
+
+.how_to_tab {
+  margin-right: 2.5rem;
+  transform: translateY(-50%);
+}
+
+.how_to_tab span {
+  margin-right: 1rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.how_to_tab--1 {
+  background-color: #d0e7e3;
+}
+
+.how_to_tab--1:hover {
+  background-color: #a6dad1;
+}
+
+.how_to_tab--2 {
+  background-color: #e3d0e7;
+}
+
+.how_to_tab--2:hover {
+  background-color: #daace4;
+}
+
+.how_to_tab--3 {
+  background-color: #e7e3d0;
+}
+
+.how_to_tab--3:hover {
+  background-color: #e6dba9;
+}
+
+.how_to_tab--active {
+  transform: translateY(-66%);
+}
+
+.how_to_contents {
+  display: none;
+}
+
+.how_to_contents--active {
+  display: flex;
+  justify-content: space-evenly;
+  grid-template-columns: 7rem;
+  column-gap: 3rem;
+  row-gap: 0.5rem;
+  height: 200px;
+}
+
+.how_to_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.how_to_icon img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  padding: 1.25rem 4.5rem;
+  border-radius: 10rem;
+  transition: all 0.3s;
+}
+
+/* Customer requests */
+
+.customer_requests_container {
+  text-align: center;
+  width: 70%;
+  height: 30rem;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #a6dad1;
+  border-radius: 15px;
+}
+
+#customer_requests h3 {
+  margin: 3%;
+  text-align: center;
+}
+
+.customer_requests_holder {
+  height: 80%;
+}
+
+.customer_requests_image {
+  width: 100%;
+  height: 90%;
+  border-radius: 150px;
+}
+
+.customer_requests_ele {
+  position: absolute;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  transition: transform 1s;
+  padding-left: 3%;
+  padding-top: 3%;
+}
+
+.customer_request_btn {
+  top: 105rem;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.customer_request_btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.customer_request_btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+}
+
+/* Wrapper */
+
+.wrapper {
+  width: 100%;
+  background-color: #e3d0e7;
+  height: 25rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapper_container {
+  width: 15%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.wrapper_container img {
+  width: 100%;
+  height: 90%;
+}
+
+/* Review */
+
+#reviews {
+  width: 85%;
+  display: flex;
+  height: 25rem;
+  overflow: hidden;
+  margin: 5rem 10% 5rem 7%;
+}
+
+.review--holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  background-color: #a6dad1;
+  border-radius: 100px;
+}
+
+.review__logo img {
+  border-radius: 200px;
+  height: 15rem;
+  margin-left: 5%;
+}
+
+.review__text p {
+  font-weight: 700;
+  font-style: oblique;
+  line-height: 2rem;
+}
+
+.review__text h5 {
+  line-height: 5rem;
+  font-size: 1.25rem;
+}
+
+.review_btn {
+  /* top: 165rem; */
+  position: absolute;
+  z-index: 1;
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.review_btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.review_btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+}
+
+hr {
+  border: 2px #333 solid;
+  width: 80%;
+  margin: 0 10%;
+}
+
+/* About the team */
+
+#about {
+  margin: 5%;
+  display: flex;
+  justify-content: space-around;
+  height: 25rem;
+  gap: 5%;
+}
+
+#about img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100px;
+}
+
+.about__team {
+  display: block;
+  background-color: #e3d0e7;
+  width: 70%;
+  border-radius: 50px;
+}
+
+.team__img {
+  margin-left: 2%;
+}
+
+.about__us {
+  background-color: #d0e7e3;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  border-radius: 50px;
+}
+
+.team__containers {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  margin: 2% 2%;
+}
+
+.team__text {
+  text-align: justify;
+  width: 100%;
+  font-style: italic;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  background-color: #a6dad1;
+  text-align: center;
+}
