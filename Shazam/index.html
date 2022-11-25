@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>How does Shazam work?</title>
+  </head>
+  <body>
+
+    <main>
+      <div class="__1">
+        <div class="__1_container">
+          <div class="head_list">
+            <!-- <div class="navbar_header">Jump to section</div> -->
+            <div class="__1_list">
+              <ul>
+                <li>
+                  <a href="#what_is"><button>What is Shazam</button></a>
+                </li>
+                <li>
+                  <a href="#but_how"><button>How does it all work?</button></a>
+                </li>
+                <li>
+                  <a href="#audio_fingerprints"><button>
+                  
+                    Audio Fingerprints
+                  </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#shazam_create">
+                    <button>
+                    Shazam's Audio Fingerprints
+                  </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#spectrograms">
+                    <button>
+                  Spectrograms
+                </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#shazam_spectrograms">
+                    <button>
+                    Shazam's Spectrograms
+                  </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#relationships">
+                    <button>
+                  Relationships
+                </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#hashes">
+                    <button>
+                  Hashes
+                </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#reintroduce_time">
+                    <button>
+                    Bringing back time
+                  </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#scatterplots">
+                    <button>
+                  Scatterplots
+                </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#find_start">
+                    <button>
+                  Find the start
+                </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="audio_descripted">
+            <audio class="audio__1" controls>
+              <source src="./Audio/shazam_master.mp3" type="audio/mp3" />
+            </audio>
+            <div class="click_above">Audio version of this blog</div>
+          </div>
+        </div>
+      </div>
+      <div class="__2">
+        
+        <section id="writing">
+          <div>
+            <header>
+              <div class="text_text">
+                <div class="call_to_action">How does Shazam work?</div>
+                <div class="italics_action">
+              A blog to decipher some musical magic
+                </div>
+                <div class="head">
+                  <img src="Images/Ed Tidy Headshot.jpg" />
+                  <div class="head__info">
+                    <div class="head__name">
+                      <p>Edward Tidy<br /><br />July 30, 2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <img src="./Images/tap_to_shazam.jpg">
+            </header>
+            <div class="section_header" id="what_is">What is Shazam?</div>
+            <div>
+              <p class="first_p">
+                Have you ever heard a song on the radio and wanted to know its name? 
+                Have you ever been out with friends and heard a song you grew up with, but none of you can remember what it's called? 
+                Have you ever argued with someone about the artist who performed a song and wanted to be proved right? 
+                That's where Shazam comes in.
+              </p>
+              <img
+                src="https://media.giphy.com/media/ku5EcFe4PNGWA/giphy.gif"
+                alt="A gif of the DC character Shazam"
+              />
+              <figcaption></figcaption>
+              <p>
+                Shazam is a free application (or App) that you can use to identify a song in seconds. 
+                All you have to do is open the App, tap the Shazam button, and let Shazam do the rest. 
+                Shazam can tell you the name of the song, the artist you're listening to, and even gives you handy information like upcoming tour dates for that artist.
+              </p>
+            </div>
+            <div class="section_header" id="but_how">
+              But how does it all work?
+            </div>
+            <div>
+              <p class="first_p">
+                When you tap on the Shazam button in the App, Shazam will use the microphone on your device to record a short clip of the song you are listening to, called an 'Audio Sample'. 
+                Shazam will then compare this Audio Sample against the millions of songs on its database to find a match. 
+                The Shazam technology is cross-platform, which means it can be used on lots of different devices such as Smartphones, Computers or even Smartwatches. 
+                Recent updates to the technology have expanded this capability, meaning Shazam can even identify the tv show you're currently watching.
+              </p>
+
+              <p>
+                When talking about how Shazam works the important thing to understand is that the App doesn't need to review every song and audio clip on its database to find a match. 
+                With millions of audio files to work through we would be looking at a period of many years, not seconds, to get a result. 
+                Instead Shazam uses 'Audio Fingerprinting'. 
+                In the same way that people all over the world have unique fingerprints that can be used to identify them, Shazam calculates unique Audio Fingerprints for each of the files in its database, so that it can sort through them quickly, efficiently and accurately.
+              </p>
+            </div>
+            <div class="section_header" id="audio_fingerprints">
+              What's this about Audio Fingerprints?
+            </div>
+            <div>
+              <p class="first_p">
+                Unlike a physical fingerprint, these Audio Fingerprints are
+                actually small chunks of numerical data that represent the
+                audio. These have the twofold benefit of being much smaller,
+                using less processing power to handle, and being much easier to
+                sort through.
+              </p>
+              <img
+                src="https://media.giphy.com/media/26tn66XDQtXadfWrS/giphy.gif"
+                alt="A digital rendition of a human fingerprint"
+              />
+              <p>
+                When a user records an Audio Sample and uploads it to Shazam,
+                the App will assign it an Audio Fingerprint and then sort
+                through its database to find a match. All of the songs and audio
+                files in the Shazam database have already been assigned Audio
+                Fingerprints, so the whole process of searching to find a match
+                is almost instantaneous.
+              </p>
+            </div>
+            <div class="section_header" id="shazam_create">
+              How does Shazam create Audio Fingerprints?
+            </div>
+            <div>
+              <p class="first_p">
+                Shazam analyses the Audio Sample passed to it by looking at
+                three distinct elements: Amplitude, Frequency and Time.
+                Amplitude refers to the loudness of the sound, Frequency is the
+                rate at which the sound repeats itself (which we would think of
+                as its pitch) and Time is normally measured in seconds.
+              </p>
+              <p>
+                Shazam will assign different values for each of these three
+                elements, and combined they create a unique Audio Fingerprint. 
+                That's how it works in a nutshell.
+                But, if you're interested in getting into the nitty gritty of the App then get ready, we're about to dive in.
+              </p>
+              <img
+                src="https://media.giphy.com/media/l2Je1bFuOpkNpyqYM/giphy.gif"
+                alt="Homer from the Simpsons diving into a pool"
+              />
+            </div>
+            <div class="section_header" id="spectrograms">Spectrograms</div>
+            <div>
+              <p class="first_p">
+                The first step in creating an Audio Fingerprint involves the use of musical
+                graphs called Spectrograms. Spectrograms are used to show:
+                  <ul>
+                  <li><p>The <strong>volume</strong> of a sound, also called <strong>Amplitude</strong></p></li>
+                  <li><p>Over a period of <strong>time</strong></p></li>
+                  <li><p>At various <strong>frequencies</strong></p></li>
+                  </ul> 
+                  <p>In the example below we have a Spectrogram of a piano playing the note C4.
+                    The X-Axis has a value of time, the Y-Axis
+                    represents frequency, and Amplitude is shown by the intensity of colour. On the right hand side of the image is a chart of how to interpret these colours: more intense, red colours represent a louder volume,
+                    lighter colours represent less volume.
+              </p>
+              
+              </div>
+              <p>
+                
+              </p>
+              <img
+                src="./Images/piano_spectrogram_c4.jpg"
+                src="A Spectrogram of a piano playing the C4 note"
+              />
+              <p>
+                C4 is a low, bassy note that sits around a frequency of 240 HZ.
+                We can see on the chart for Amplitude that the loudest noise, correspondening to the note being played, has a frequency of around 240HZ, which is being played in the example audio:
+              </p>
+              <iframe
+                width="100%"
+                height="300"
+                scrolling="no"
+                frameborder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/627239079&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <div
+                style="
+                  font-size: 10px;
+                  color: #cccccc;
+                  line-break: anywhere;
+                  word-break: normal;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+                    Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+                  font-weight: 100;
+                "
+              >
+                <a
+                  href="https://soundcloud.com/jcrimonte"
+                  title="John Cedrique"
+                  target="_blank"
+                  style="color: #cccccc; text-decoration: none"
+                  >John Cedrique</a
+                >
+                ·
+                <a
+                  href="https://soundcloud.com/jcrimonte/c4-piano-recording"
+                  title="C4 Piano Recording"
+                  target="_blank"
+                  style="color: #cccccc; text-decoration: none"
+                  >C4 Piano Recording</a>
+                </div>  
+              <p>
+                The other horizontal lines denote the other
+                noises made by the instrument when the note is played. Something
+                that is nice to note is that these other tones are evenly
+                spaced, that's because a piano is a harmonic instrument. Whenever a note is played on a piano,
+                you'll also get some quieter harmonies played.
+              </p>
+              <img
+                src="https://media.giphy.com/media/jERwi5mAKIvza/giphy.gif"
+                alt="Mr Bean playing the piano"
+              />
+              <p>
+                When creating an Audio Fingerprint Shazam will first analyse each note played in the song or Audio Sample and mark them on a Spectrogram, much like the one below.
+              </p>
+              <img
+                src="./Images/Shazam_Spectrogram.jpg"
+                alt="A Spectrogram from Shazam's early years"
+              /><figcaption>Areas of more intense shading represent the notes being played</figcaption>
+            
+            <div class="section_header" id="shazam_spectrograms">
+              How does Shazam use Spectrograms?
+            </div>
+            <div>
+              <p class="first_p">
+                After creating the initial Spectrogram for the audio it is analysing, Shazam will select the points of greatest Amplitude and mark them on a 'Constellation
+                Map', like the one below.
+              </p>
+              <img
+                id="side_by_side"
+                src="./Images/Spectrogram_Constellation.jpg"
+                alt="The previous Spectrogram and its Constellation Map side by side"
+              /><figcaption>A side by side of a Spectrogram and its Constellation Map</figcaption>
+              <p>
+                Often there is more than one point of Amplitude at a specific
+                time, at those points in the song, chords are being played.
+              </p>
+              <img
+                src="https://media.giphy.com/media/9Dgf4pFMzSrTrE4Urj/giphy.gif"
+                alt="A rather ridiculous looking rocker"
+              />
+              <p>
+                If we were to overlay the Constellation Map for our Audio Sample
+                on the Constellation Map for the original song, then there would
+                be a point where they line up perfectly! Unfortunately the way
+                the data is presented at this point means that Shazam would only
+                be able to identify a match if the recording started as soon as
+                the song did.
+              </p>
+              <p>
+                Because we are still looking at the data relative to the start
+                of the song and the start of the Audio Sample, Shazam can't
+                match these up. To find a match, the user would have to start
+                recording right at the start of the song. How do we find a match
+                for the random section of a song that the user has recorded?
+              </p>
+            </div>
+            <div class="section_header" id="relationships">Relationships</div>
+            <div>
+              <p class="first_p">
+                Shazam gets around this problem by looking at the points in
+                relation to each other, not in relation to the song as a whole.
+                For example instead of saying, 'This note is played 20 seconds
+                after the start' Shazam would say 'This note is played 3 seconds
+                before this other note'.
+              </p>
+              <p>
+                In the diagram below we can see this being put into effect on
+                our example from earlier. Shazam will work through every note
+                (referred to as an anchor point in this instance), and create a
+                'Target Zone' of notes in front of it. Shazam identifies this
+                Target Zone by looking for notes that will be close enough
+                together in time that they will likely be recorded together when
+                you try to identify a song (Shazam advises it works best with a
+                5 second clip).
+              </p>
+              <img
+                src="./Images/Hashes.jpg"
+                alt="Using an anchor point to create a Target Zone"
+              />
+            </div>
+            <div class="section_header" id="hashes">Hashes</div>
+            <div>
+              <p class="first_p">
+                By looking at notes in relation to each other, Shazam identifies
+                3 important pieces of information: 
+                </p>
+                <ul>
+                <li><p>The frequency of the first note</p></li>
+                 <li><p>The frequency of the second note</p></li>
+                 <li><p>And the time between them</p></li>
+              </ul>
+              <p>Shazam creates a small snippet of data containing this
+                information, the first few digits corresponding to the frequency
+                of the first note, the next few representing the frequency of
+                the second note and the final few representing the time between
+                notes being played. These small snippets of data are called
+                'Hashes' and all combined they make up the songs Audio
+                Fingerprint.
+              </p>
+              <img
+                src="./Images/Hashes_selected.jpg"
+                alt="A side by side of
+              picking out indiviudal hashes from a Constellation Map "
+              /><figcaption>An example of a Hash; two notes and the time between them</figcaption>
+              <p>
+                All of the songs and audio files on Shazam's database have already been converted to Hashes and assigned an Audio Fingerprint. When someone wants to search for a
+                song therefore, Shazam only needs to convert the Audio Sample into its own set of
+                Hashes, then start searching its database for a match.
+              </p>
+              <p>
+                To increase the accuracy of the whole process, Shazam creates far more Hashes than is
+                needed to reliably identify the song. This makes Shazam
+                extremely accurate and robust, as any Hashes that are covered by
+                external noise (like people yelling in a loud pub) will usually
+                not be enough to impact Shazam's operations.
+              </p>
+              <img
+                src="https://media.giphy.com/media/eY8NEWcZEOwjkOF92k/giphy.gif"
+                alt="An animated band playing"
+              />
+              <p>
+                After creating a set of Hashes for the Audio Sample, Shazam starts searching its database to find a match.
+                The more matching Hashes Shazam finds in a song's
+                Audio Fingerprint, the more likely Shazam has found the correct
+                song. To make absolutely certain though, there is one more step in the process.
+              </p>
+
+            </div>
+            <div class="section_header" id="reintroduce_time">
+              Reintroducing time to the equation
+            </div>
+            <div>
+              <p class="first_p">
+                When Shazam converts the Audio Sample to Hashes, it is actually creating an unordered
+                set of data. Because Shazam is looking purely for matching Hashes (for
+                example: E Minor going to E Sharp with a gap of 2 seconds
+                between the notes and played on a guitar) without putting
+                emphasis on the order they are played in, it can often find
+                multiple songs with a lot of matches. 
+              <img
+                src="https://media.giphy.com/media/bcrOR2stk6tKIxqPOZ/giphy.gif"
+                alt="Spiderman pointing at Spiderman"
+              />
+              <p>
+                To identify the correct song from these potential matches, Shazam has to consider the order that the Hashes are played in.
+              </p>
+            </div>
+            <div class="section_header" id="scatterplots">Scatterplots</div>
+            <div>
+              <p class="first_p">
+                For the final step in the identification process, Shazam creates a
+                Scatterplot of all of the matching pairs of Hashes, like the one
+                shown below.
+              </p>
+              <img
+                src="./Images/Scatterplot.jpg"
+                alt="An example of an unmatched Shazam Scatterplot"
+              />
+              <p>
+                Along the X Axis we have the time of the full song that Shazam thinks could be a match, along the Y Axis we have the time of the audio
+                sample we have recorded. An increase of the values on the Axes
+                would represent the songs playing. If the songs do not match then
+                there will be no correlation between the two, and all of the
+                points that we see on the Scatterplot will have no clear pattern,
+                as is the case above.
+              </p>
+              <img
+                src="https://media.giphy.com/media/AhQev1suy32mWdFNcq/giphy.gif"
+                alt="Bill Hader saying chaos"
+              />
+              <p>
+                If the songs match however we will see a strong correlation,
+                there will be a diagonal line starting from the point in the
+                original song that the Audio Sample is taken from.
+              </p>
+              <img
+                src="./Images/matching_scatterplot.jpg"
+                alt="A matched scatterplot"
+              />
+              <p>
+                As time continues and both samples play we will see the Hashes
+                continuing to match each other and this causes the diagonal
+                line, right up to the point that the Audio Sample finishes. We
+                can see this in the example above. As the original song plays we
+                get to the point where the sample was taken from, we see the
+                hashes match, and as the time increases there are consistent
+                matches.
+              </p>
+            </div>
+            <div class="section_header" id="find_start">Find the start</div>
+            <div>
+              <p class="first_p">
+                Shazam is even able to identify the point in the song where the
+                Audio Sample is taken, by looking at the matching pairs of Hashes
+                on the Scatterplot.
+              </p>
+              <p>
+                By subtracting the time shown on the Audio Sample from the time
+                shown on the original song at the point the Hashes match, you
+                can calculate the start point of the Audio Sample in the
+                original song.
+              </p>
+              <p>
+                By doing this for every matching pair of Hashes in the
+                Scatterplot Shazam will create a histogram (a graph showing the
+                frequency of numerical data, using rectangles) with a
+                significant spike at the point in the original song that the
+                Audio Sample starts at.
+              </p>
+              <img
+                src="./Images/matching_histogram.jpg"
+                alt="A histogram taken from the earlier song, showing a spike at 40 seconds"
+              />
+              <figcaption>
+                The audio sample comes from 40 seconds into the song
+              </figcaption>
+              <p>
+                So, next time you're at a pub with friends, or out on the street
+                and you hear a song, why not pull out Shazam and put this into
+                practice? You'll never have to miss out on music again.
+              </p>
+              <img
+                src="https://media.giphy.com/media/3o6ZsUJ44ffpnAW7Dy/giphy.gif"
+                alt="Patrick Stewart saluting you"
+              />
+            </div>
+          </div>
+        </section>
+        <footer>
+          <hr />
+          <div>
+            Reference: Research paper by Shazam co-founder Avery Wang
+            <a
+              href="https://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf"
+              target="_blank"
+              >https://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf</a
+            >
+          </div>
+          <div>
+            <p>An in-depth look at Shazam's algorithm:</p>
+            <iframe
+              frameborder="0"
+              allowfullscreen="1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              title="PWLTO#11 – Peter Sobot on An Industrial-Strength Audio Search Algorithm"
+              width="480px"
+              height="320px"
+              src="https://www.youtube.com/embed/WhXgpkQ8E-Q?autoplay=0&amp;mute=0&amp;controls=1&amp;origin=https%3A%2F%2Fedwardtidyet.wixsite.com&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;enablejsapi=1&amp;widgetid=1"
+              id="widget2"
+            ></iframe>
+            <img video from that dude />
+          </div>
+        </footer>
+      </div>
+      <div class="__3">
+        <section class="main">
+          <div class="head">
+            <img src="Images/Ed Tidy Headshot.jpg" />
+            <div class="head__info">
+              <div class="head__name__3">
+                <p>Edward Tidy<br /><br />July 30, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4>More work by the author</h4>
+          </div>
+         
+          <div class="head">
+            <div>
+              <p></p>
+              <br>
+              <br>
+              <p></p>
+            </div>
+            <a href="https://hoardingdisordersuk.org/" target="_blank"><img class="link" src="./Images/HDUK.png"><figcaption><p>Hoarding Disorders UK</p></figcaption></a>
+          </div>
+          <div class="head">
+            <div>
+              
+            </div>
+            <a href="./How to play D&D/index.html" target="_blank"><img class="link" src="./Images/D&D Splash.png"><figcaption><p>How to play Dungeons & Dragons (5E)</p></figcaption></a>
+          </div>
+          <div class="head">
+            
+            <div>
+              <p></p>
+              <br>
+              <br>
+              <p></p>
+            </div>
+            <a href="#"><img class="link" src="./Images/Perfume_spray.jpg"><figcaption><p>Fragrance for you</p></figcaption></a>
+          </div>
+
+          <div class="head">
+            
+            <div>
+              <p></p>
+              <br>
+              <br>
+              <p></p>
+            </div>
+            <a href="./Cake website/index.html" target="_blank"><img class="link" src="./Images/Cake_splash.png"><figcaption><p>Cake time</p></figcaption></a>
+          </div>
+
+
+
+          
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+
+
+<script src="./script.js"></script>
