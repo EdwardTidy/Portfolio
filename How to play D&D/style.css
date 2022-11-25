@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-size: 5.375rem 5.975rem; */
+  /* background-size: 10.75rem 11.95rem; */
+  background-color: darkgray;
+}
+
+header {
+  width: 100%;
+}
+
+.curtain img {
+  width: 100%;
+  height: 60vh;
+  z-index: -1;
+  /* background-image: url(./Images/Curtain.jpg); */
+  position: absolute;
+}
+
+.heading {
+  background-image: url(./Images/D&D.png);
+  width: 42%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 18rem;
+  z-index: 1;
+  transform: translateY(20%);
+  border-radius: 40px;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.break {
+  height: 10%px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+.break img {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 2%;
+  border-radius: 50px;
+  height: 2rem;
+}
+
+.container {
+  width: 100%;
+}
+
+.gutter__left {
+  width: 10%;
+  height: 100vh;
+}
+
+.gutter__left img {
+  width: 100%;
+  height: 10000px;
+}
+
+.gutter__right {
+  width: 10%;
+  height: 100%;
+}
+
+.gutter__right img {
+  width: 100%;
+  height: 10000px;
+}
+
+.section__container {
+  transform: translateY(6.25%);
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: black;
+  border: 5px darkred solid;
+  /* border-right: 5px darkred solid; */
+  color: whitesmoke;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20rem;
+}
+
+section h2 {
+  text-decoration: underline;
+  margin: 2% 0;
+}
+
+section p {
+  line-height: 1.75rem;
+  text-indent: 5%;
+}
+
+section a {
+  color: white;
+  font-weight: 600;
+}
+
+section {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
+}
+
+section h4 {
+  margin: 1.5rem 0 1.5rem 2.5%;
+  text-decoration: underline;
+}
+
+.text {
+  width: 80%;
+  /* height: 100vh; */
+}
+
+.role-playing_game ol {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.75rem;
+  margin-left: 3%;
+}
+
+.expectations {
+  margin: 2%;
+  border: solid 5px darkred;
+  padding: 2%;
+}
+
+.expectations h4 {
+  margin: 0 0 1.5rem 2.5%;
+}
+
+.characters ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.75rem;
+  margin-left: 3%;
+}
+
+.float figcaption {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+}
+
+.float__1 {
+  float: right;
+  text-align: center;
+}
+
+.float__2 {
+  float: left;
+  clear: right;
+  width: 15rem;
+  height: 13rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(top, #ffafbd, #ffc3a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  margin-right: 0.5rem;
+}
+
+.float__2 img {
+  width: 20rem;
+}
+
+.float__3 {
+  float: right;
+  text-align: center;
+}
+
+.float__3 figcaption {
+  margin-left: 10%;
+}
+
+.float__4 {
+  float: right;
+  clear: left;
+  width: 30rem;
+  height: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(top, #ffafbd, #ffc3a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  margin-right: 0.5rem;
+}
+
+/* entry-content q {
+  background: -webkit-linear-gradient(top,#e8024b,#a32b68);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.float__5 {
+  float: left;
+  text-align: center;
+  margin: 0 2% 2% 0;
+  height: 17.5rem;
+  width: 17.5rem;
+}
+
+.float__5 img {
+  height: 17.5rem;
+  width: 17.5rem;
+}
+
+.float__6 {
+  float: right;
+  clear: left;
+  width: 10rem;
+  height: 15rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(top, #ffafbd, #ffc3a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  margin-left: 2%;
+}
+
+.float__7 {
+  float: left;
+  width: 14rem;
+  height: 18rem;
+  text-align: center;
+  margin-right: 2%;
+}
+
+.float__7 img {
+  height: 14rem;
+  width: 14rem;
+}
+
+.float__8 {
+  float: right;
+  width: 22rem;
+  height: 22rem;
+  text-align: center;
+  margin-right: 2%;
+}
+
+.float__8 img {
+  height: 20rem;
+  width: 20rem;
+}
+
+.float__9 {
+  float: left;
+  clear: right;
+  width: 16rem;
+  height: 10rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(top, #ffafbd, #ffc3a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  margin: 0 2%;
+}
+
+.text__1 {
+  text-indent: 0;
+}
+
+.float__10 {
+  float: right;
+  width: 14rem;
+  height: 12rem;
+  text-align: center;
+  margin-right: 2%;
+}
+
+.float__10 img {
+  float: right;
+  width: 14rem;
+  height: 9rem;
+  text-align: center;
+  margin-right: 2%;
+}
+
+.float__11 {
+  float: left;
+  clear: both;
+  width: 16rem;
+  height: 6rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(top, #ffafbd, #ffc3a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  margin: 2% 0;
+}
+
+/* #float__11:before {
+  content: "";
+  display: block;
+  float: right;
+  height: 300px;
+} */
+
+.float__12 {
+  float: right;
+  width: 14rem;
+  height: 9rem;
+  text-align: center;
+  margin: 2% 2%;
+}
+
+.float__12 img {
+  float: right;
+  width: 14rem;
+  height: 9rem;
+  text-align: center;
+  margin-right: 2%;
+}
+
+.float__13 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 14rem;
+  height: 9rem;
+  text-align: center;
+}
+
+/* #float__13 img {
+  float: right;
+  width: 14rem;
+  height: 9rem;
+  text-align: center;
+  margin-right: 2%;
+}  */
+
+.break__3 {
+  margin-bottom: 2rem;
+}
